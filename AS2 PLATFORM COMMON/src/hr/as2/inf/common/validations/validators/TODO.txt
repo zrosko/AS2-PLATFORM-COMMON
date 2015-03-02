@@ -1,0 +1,2 @@
+Po uzoru na Vaddin treba napravit ostale validatore. 
+Ukratko to znači da trebaju naslijediti AS2Validator kao u AS2EmailValidator validatoru.
