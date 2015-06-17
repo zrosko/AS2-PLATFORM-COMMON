@@ -59,7 +59,8 @@ public AS2FileResource() {
     }
 
     // If you get here, something went wrong. Report the exception.
-    String msg="";
+    @SuppressWarnings("unused")
+	String msg="";
     if (exception != null) {
       msg = ": " + exception;
     }
@@ -196,9 +197,11 @@ public AS2FileResource() {
   // Splits a String into pieces according to a delimiter.
   // Uses JDK 1.1 classes for backward compatibility.
   // JDK 1.4 actually has a split(  ) method now.
-  private static String[  ] split(String str, String delim) {
+  @SuppressWarnings("unchecked")
+private static String[  ] split(String str, String delim) {
     // Use a Vector to hold the split strings.
-    Vector v = new Vector(  );
+    @SuppressWarnings("rawtypes")
+	Vector v = new Vector(  );
 
     // Use a StringTokenizer to do the splitting.
     StringTokenizer tokenizer = new StringTokenizer(str, delim);

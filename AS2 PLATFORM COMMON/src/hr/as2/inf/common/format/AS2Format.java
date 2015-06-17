@@ -433,6 +433,7 @@ public final class AS2Format
 		{
 			String dat = "";
 			Date value = new Date(0);
+			@SuppressWarnings("unused")
 			int pos = 0;
 			dat = new String(holder, offset, length).trim();
 			int mm_pos = dat.indexOf('-');
@@ -479,9 +480,12 @@ public final class AS2Format
 			}
 			else
 			{
+				@SuppressWarnings("unused")
 				Integer yy = new Integer(dat.substring(pos, yy_pos));
 				int mm_pos = dat.indexOf('-', yy_pos + 1);
+				@SuppressWarnings("unused")
 				Integer mm = new Integer(dat.substring(yy_pos + 1, mm_pos));
+				@SuppressWarnings("unused")
 				Integer dd = new Integer(dat.substring(mm_pos + 1));
 				//?? value.setYear(yy.intValue()-1900);
 				//?? value.setMonth(mm.intValue()-1);
@@ -505,11 +509,17 @@ public final class AS2Format
 		String strDate = new String(holder, offset, length);
 		if (strDate.trim().length() >= 19)
 		{
+			@SuppressWarnings("unused")
 			int year = 0;
+			@SuppressWarnings("unused")
 			int month = 0;
+			@SuppressWarnings("unused")
 			int date = 0;
+			@SuppressWarnings("unused")
 			int hrs = 0;
+			@SuppressWarnings("unused")
 			int min = 0;
+			@SuppressWarnings("unused")
 			int sec = 0;
 			year = (new Integer(strDate.substring(0, 4)).intValue() - 1900);
 			month = (new Integer(strDate.substring(5, 7)).intValue() - 1);
@@ -544,6 +554,7 @@ public final class AS2Format
 	 */
 	public static int getIntFromByteArray(byte holder[], int offset, int length)
 	{
+		@SuppressWarnings("unused")
 		int rc = 0;
 		int sum = 0;
 		int index;
@@ -1138,6 +1149,7 @@ public final class AS2Format
 	 * @return
 	 * @author Tomo Krajina
 	 */
+	@SuppressWarnings({ "rawtypes", "unchecked" })
 	public static Vector splitStringToLines(String text, int length)
 	{
 		Vector lines = new Vector();

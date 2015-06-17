@@ -7,5 +7,7 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/JASPER_REPORTS"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/APACHE_POI"/>
 	<classpathentry kind="con" path="org.eclipse.ajdt.core.ASPECTJRT_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/DOCX_CONVERTERS"/>
+	<classpathentry kind="con" path="org.eclipse.pde.core.requiredPlugins"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
